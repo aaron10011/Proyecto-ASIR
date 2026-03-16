@@ -36,7 +36,33 @@ Configuración de red:
 Este router actúa como **gateway** para el resto de máquinas del laboratorio.
 
 ---
+## Diagrama de Arquitectura
 
+```mermaid
+graph TD
+
+Internet((Internet))
+
+Router[Router OpenWRT<br>192.168.2.1]
+
+Zabbix[Zabbix Server<br>192.168.2.10<br>Ubuntu Server 24.04]
+
+Apache[Apache Server<br>192.168.2.30<br>Ubuntu Server 24.04]
+
+MySQL[MySQL Server<br>192.168.2.20<br>Ubuntu Server 24.04]
+
+Internet --- Router
+
+Router --- Zabbix
+Router --- Apache
+Router --- MySQL
+
+Apache --- MySQL
+
+Zabbix --- Apache
+Zabbix --- MySQL
+Zabbix -.SNMP.-> Router
+```
 # Tecnologías Utilizadas
 
 - **Zabbix**
