@@ -178,10 +178,10 @@ Cuando el sistema vuelve a su estado normal, se envía otro correo indicando que
 
 **Proyecto realizado por:**
 
-  Aarón Pérez Ramírez
+- Aarón Pérez Ramírez
 
-  Iván Díaz Farto
+- Iván Díaz Farto
 
 **Proyecto Final del ciclo formativo:**
 
-  Administración de Sistemas Informáticos en Red (ASIR)
+Administración de Sistemas Informáticos en Red (ASIR)
