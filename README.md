@@ -10,7 +10,7 @@ La infraestructura se encuentra desplegada en **máquinas virtuales** que simula
 
 ---
 
-# 🎯 Objetivos del Proyecto
+## 🎯 Objetivos del Proyecto
 
 - Implementar un **sistema profesional de monitorización**
 - Aprender a utilizar **Zabbix en entornos reales**
@@ -20,7 +20,7 @@ La infraestructura se encuentra desplegada en **máquinas virtuales** que simula
 
 ---
 
-# 🛠️ Arquitectura del Sistema
+## 🛠️ Arquitectura del Sistema
 
 El entorno se compone de **4 máquinas virtuales**:
 
@@ -33,7 +33,7 @@ El entorno se compone de **4 máquinas virtuales**:
 
 ---
 
-# 🛜 Infraestructura de Red
+## 🛜 Infraestructura de Red
 
 Red interna utilizada:
 
@@ -73,7 +73,7 @@ Zabbix --- Apache
 Zabbix --- MySQL
 Zabbix -.SNMP.-> Router
 ```
-# 💻 Tecnologías Utilizadas
+## 💻 Tecnologías Utilizadas
 
 - **Zabbix**
 - **Ubuntu Server 24.04**
@@ -87,9 +87,9 @@ Zabbix -.SNMP.-> Router
 
 ---
 
-# 👁️ Monitorización Implementada
+## 👁️ Monitorización Implementada
 
-## Monitorización mediante Agentes Zabbix
+### Monitorización mediante Agentes Zabbix
 
 Se utilizan **agentes de Zabbix** instalados en los servidores Ubuntu para monitorizar:
 
@@ -101,7 +101,7 @@ Se utilizan **agentes de Zabbix** instalados en los servidores Ubuntu para monit
 
 ---
 
-## Monitorización mediante SNMP
+### Monitorización mediante SNMP
 
 El router **OpenWRT** es monitorizado mediante **SNMP**, permitiendo obtener información sobre:
 
@@ -111,7 +111,7 @@ El router **OpenWRT** es monitorizado mediante **SNMP**, permitiendo obtener inf
 
 ---
 
-# Scripts Personalizados de Monitorización
+## Scripts Personalizados de Monitorización
 
 Además de las plantillas estándar de Zabbix, se han desarrollado **scripts personalizados en Bash** para realizar comprobaciones específicas.
 
@@ -147,7 +147,7 @@ Verifica que el servicio se encuentre en ejecución.
 
 ---
 
-# ⚠️ Sistema de Alertas
+## ⚠️ Sistema de Alertas
 
 Se han configurado **triggers personalizados en Zabbix** que se activan cuando se detecta un problema en el sistema monitorizado.
 
@@ -174,7 +174,7 @@ Cuando el sistema vuelve a su estado normal, se envía otro correo indicando que
 
 ---
 
-# 🧑‍🤝‍🧑 Autores
+## 🧑‍🤝‍🧑 Autores
 
 **Proyecto realizado por:**
 
