@@ -1,6 +1,6 @@
 # Proyecto Final ASIR - Sistema de Monitorización con Zabbix
 
-## Descripción del Proyecto
+## 🧑‍💻 Descripción del Proyecto
 
 Este proyecto consiste en la implementación de un sistema de **monitorización de infraestructura IT** utilizando **Zabbix** en un entorno virtualizado y controlado.
 
@@ -10,7 +10,7 @@ La infraestructura se encuentra desplegada en **máquinas virtuales** que simula
 
 ---
 
-# Objetivos del Proyecto
+# 🎯 Objetivos del Proyecto
 
 - Implementar un **sistema profesional de monitorización**
 - Aprender a utilizar **Zabbix en entornos reales**
@@ -20,7 +20,7 @@ La infraestructura se encuentra desplegada en **máquinas virtuales** que simula
 
 ---
 
-# Arquitectura del Sistema
+# 🛠️ Arquitectura del Sistema
 
 El entorno se compone de **4 máquinas virtuales**:
 
@@ -33,7 +33,7 @@ El entorno se compone de **4 máquinas virtuales**:
 
 ---
 
-# Infraestructura de Red
+# 🛜 Infraestructura de Red
 
 Red interna utilizada:
 
@@ -46,7 +46,7 @@ Configuración de red:
 Este router actúa como **gateway** para el resto de máquinas del laboratorio.
 
 ---
-## Diagrama de Arquitectura
+## 🌐 Diagrama de Arquitectura
 
 ```mermaid
 graph TD
@@ -73,7 +73,7 @@ Zabbix --- Apache
 Zabbix --- MySQL
 Zabbix -.SNMP.-> Router
 ```
-# Tecnologías Utilizadas
+# 💻 Tecnologías Utilizadas
 
 - **Zabbix**
 - **Ubuntu Server 24.04**
@@ -87,7 +87,7 @@ Zabbix -.SNMP.-> Router
 
 ---
 
-# Monitorización Implementada
+# 👁️ Monitorización Implementada
 
 ## Monitorización mediante Agentes Zabbix
 
@@ -153,7 +153,7 @@ se encuentre en ejecución.
 
 ---
 
-# Sistema de Alertas
+# ⚠️ Sistema de Alertas
 
 Se han configurado **triggers personalizados en Zabbix** que se activan cuando se detecta un problema en el sistema monitorizado.
 
@@ -180,7 +180,7 @@ Cuando el sistema vuelve a su estado normal, se envía otro correo indicando que
 
 ---
 
-# Autor
+# 🧑‍🤝‍🧑 Autores
 
 Proyecto realizado por:
 
