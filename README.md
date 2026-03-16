@@ -170,7 +170,7 @@ Notificación enviada cuando se detecta un fallo en:
 - Integridad de archivos
 
 ### 🟢 Problema resuelto
-Cuando el sistema vuelve a su estado normal, se envía otro correo indicando que:
+Cuando el sistema vuelve a su estado normal, se envía otro correo indicando que el problema inicial ya ha sido resuelto y devuelve el último valor registrado.
 
 ---
 
