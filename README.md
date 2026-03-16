@@ -119,11 +119,11 @@ Scripts implementados:
 
 ### 1️⃣ Estado de Base de Datos
 
-Comprueba si una **base de datos específica en MySQL** se encuentra accesible.
+Comprueba si una **base de datos específica en MySQL** se encuentra disponible.
 
 ### 2️⃣ Estado de Página Web
 
-Verifica que una **página web concreta del servidor Apache** esté disponible.
+Verifica que una **página web concreta del servidor Apache** esté disponible mediante el uso de curl.
 
 ### 3️⃣ Ping hacia el exterior
 
@@ -131,25 +131,19 @@ Comprueba la conectividad desde el servidor hacia el **router (salida a Internet
 
 ### 4️⃣ Ping hacia la red interna
 
-Verifica la conectividad dentro de la **red local**.
+Verifica la conectividad del router dentro de la **red local**.
 
 ### 5️⃣ Integridad de archivos web
 
-Comprueba que el archivo:
-
-se encuentre siempre en el directorio correspondiente de la página web.
+Comprueba que el archivo index de la página web de apache se encuentre siempre en el directorio correspondiente.
 
 ### 6️⃣ Estado del servicio Apache
 
-Verifica que el servicio:
-
-esté activo.
+Verifica que el servicio esté activo y funcionando.
 
 ### 7️⃣ Estado del servicio MySQL
 
-Verifica que el servicio:
-
-se encuentre en ejecución.
+Verifica que el servicio se encuentre en ejecución.
 
 ---
 
@@ -182,12 +176,12 @@ Cuando el sistema vuelve a su estado normal, se envía otro correo indicando que
 
 # 🧑‍🤝‍🧑 Autores
 
-Proyecto realizado por:
+**Proyecto realizado por:**
 
-**Aarón Pérez Ramírez**
+Aarón Pérez Ramírez
 
-**Iván Díaz Farto**
+Iván Díaz Farto
 
-Proyecto Final del ciclo formativo:
+**Proyecto Final del ciclo formativo:**
 
-**Administración de Sistemas Informáticos en Red (ASIR)**
+Administración de Sistemas Informáticos en Red (ASIR)
