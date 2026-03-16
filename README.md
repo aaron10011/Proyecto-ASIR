@@ -10,6 +10,16 @@ La infraestructura se encuentra desplegada en **máquinas virtuales** que simula
 
 ---
 
+# Objetivos del Proyecto
+
+- Implementar un **sistema profesional de monitorización**
+- Aprender a utilizar **Zabbix en entornos reales**
+- Automatizar comprobaciones mediante **scripts Bash**
+- Integrar **alertas automáticas por correo**
+- Simular una **infraestructura empresarial monitorizada**
+
+---
+
 # Arquitectura del Sistema
 
 El entorno se compone de **4 máquinas virtuales**:
@@ -73,6 +83,7 @@ Zabbix -.SNMP.-> Router
 - **SNMP**
 - **Bash**
 - **SMTP (envío de alertas por correo)**
+- - **VirtualBox**
 
 ---
 
@@ -169,40 +180,14 @@ Cuando el sistema vuelve a su estado normal, se envía otro correo indicando que
 
 ---
 
-# Objetivos del Proyecto
-
-- Implementar un **sistema profesional de monitorización**
-- Aprender a utilizar **Zabbix en entornos reales**
-- Automatizar comprobaciones mediante **scripts Bash**
-- Integrar **alertas automáticas por correo**
-- Simular una **infraestructura empresarial monitorizada**
-
----
-
-# Posibles Mejoras
-
-Algunas mejoras que podrían implementarse en el futuro:
-
-- Monitorización mediante **Zabbix Proxy**
-- Implementación de **Grafana para visualización avanzada**
-- Añadir más servicios monitorizados
-- Implementar **automatización de recuperación (auto-remediation)**
-
----
-
 # Autor
 
 Proyecto realizado por:
 
 **Aarón Pérez Ramírez**
+
 **Iván Díaz Farto**
 
 Proyecto Final del ciclo formativo:
 
 **Administración de Sistemas Informáticos en Red (ASIR)**
-
----
-
-# Licencia
-
-Este proyecto se publica con fines educativos.
