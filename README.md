@@ -35,7 +35,7 @@ El entorno se compone de **4 máquinas virtuales**:
 
 ## 🛜 Infraestructura de Red
 
-Red interna utilizada:
+Red interna utilizada: 192.168.2.0/24
 
 Configuración de red:
 
@@ -62,6 +62,7 @@ Apache[Apache Server<br>192.168.2.30<br>Ubuntu Server 24.04]
 MySQL[MySQL Server<br>192.168.2.20<br>Ubuntu Server 24.04]
 
 Internet --- Router
+Internet --- Zabbix
 
 Router --- Zabbix
 Router --- Apache
@@ -111,11 +112,11 @@ El router **OpenWRT** es monitorizado mediante **SNMP**, permitiendo obtener inf
 
 ---
 
-## Scripts Personalizados de Monitorización
+## Alertas Personalizadas de Monitorización
 
-Además de las plantillas estándar de Zabbix, se han desarrollado **scripts personalizados en Bash** para realizar comprobaciones específicas.
+Además de las plantillas estándar de Zabbix, se han desarrollado **scripts en Bash y alertas personalizadas** para realizar comprobaciones específicas.
 
-Scripts implementados:
+Alertas implementadas:
 
 ### 1️⃣ Estado de Base de Datos
 
