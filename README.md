@@ -70,8 +70,8 @@ Router --- MySQL
 
 Apache --- MySQL
 
-Zabbix --- Apache
-Zabbix --- MySQL
+Zabbix -.Zabbix Agent.-> Apache
+Zabbix -.Zabbix Agent 2.-> MySQL
 Zabbix -.SNMP.-> Router
 ```
 ## 💻 Tecnologías Utilizadas
