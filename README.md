@@ -62,15 +62,16 @@ Apache[Apache Server<br>192.168.2.30<br>Ubuntu Server 24.04]
 MySQL[MySQL Server<br>192.168.2.20<br>Ubuntu Server 24.04]
 
 Internet --- Router
-Internet --- Zabbix
 
-Router --- Zabbix
+Internet --enp0s8-- Zabbix
+
+Router --enp0s3-- Zabbix
 Router --- Apache
 Router --- MySQL
 
 Apache --- MySQL
 
-Zabbix --.Zabbix Agent.--> Apache
+Zabbix -.Zabbix Agent.-> Apache
 Zabbix -.Zabbix Agent 2.-> MySQL
 Zabbix -.SNMP.-> Router
 ```
