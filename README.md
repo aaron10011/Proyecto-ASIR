@@ -70,7 +70,7 @@ Router --- MySQL
 
 Apache --- MySQL
 
-Zabbix -.Zabbix Agent.-> Apache
+Zabbix --.Zabbix Agent.--> Apache
 Zabbix -.Zabbix Agent 2.-> MySQL
 Zabbix -.SNMP.-> Router
 ```
