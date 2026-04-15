@@ -1,0 +1,84 @@
+<!-- ASUNTO DEL CORREO -->
+🟢 RECUPERADO: {TRIGGER.NAME} en {HOST.NAME} <!--Variables de Zabbix que indican el nombre del trigger y el nombre del equipo donde ha ocurrido-->
+
+<!-- CUERPO DEL CORREO -->
+<html>
+<body style="font-family: Arial, Helvetica, sans-serif; background-color:#f4f6f9; padding:20px;">
+
+<div style="max-width:700px; margin:auto; background:#ffffff; border-radius:8px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+
+<h2 style="color:#28a745; margin-top:0;">
+✅ Problema Resuelto
+</h2>
+
+<hr>
+
+<table style="width:100%; border-collapse:collapse;">
+<tr>
+<td style="padding:8px;"><strong>Host:</strong></td>
+<td style="padding:8px;">{HOST.NAME}</td>
+</tr>
+
+<tr style="background-color:#f9f9f9;">
+<td style="padding:8px;"><strong>IP:</strong></td>
+<td style="padding:8px;">{HOST.IP}</td> <!--Variable vinculada a la IP del equipo donde ha ocurrido-->
+</tr>
+
+<tr>
+<td style="padding:8px;"><strong>Trigger:</strong></td>
+<td style="padding:8px;">{TRIGGER.NAME}</td>
+</tr>
+
+<tr style="background-color:#f9f9f9;">
+<td style="padding:8px;"><strong>Severidad original:</strong></td>
+<td style="padding:8px;">{TRIGGER.SEVERITY}</td> <!--Variable que indica la severidad del trigger que ha saltado-->
+</tr>
+
+<tr>
+<td style="padding:8px;"><strong>Fecha/Hora recuperación:</strong></td>
+<td style="padding:8px;">{EVENT.RECOVERY.DATE} {EVENT.RECOVERY.TIME}</td> <!--Variables de fecha y hora a la que se ha el trigger-->
+</tr>
+
+<tr style="background-color:#f9f9f9;">
+<td style="padding:8px;"><strong>Duración del incidente:</strong></td>
+<td style="padding:8px;"><strong>{EVENT.AGE}</strong></td> <!--Varible sobre el tiempo que lleva el evento-->
+</tr>
+
+<tr>
+<td style="padding:8px;"><strong>ID Evento:</strong></td>
+<td style="padding:8px;">{EVENT.ID}</td> <!--Variable que indica el ID del evento-->
+</tr>
+</table>
+
+<br>
+
+<h3 style="margin-bottom:5px;">📋 Descripción del Evento</h3>
+<div style="background:#f8f9fa; padding:10px; border-left:4px solid #28a745;">
+{TRIGGER.DESCRIPTION} <!--Variable vincualda a la descripción del trigger-->
+</div>
+
+<br>
+
+<h3 style="margin-bottom:5px;">📊 Valor Actual</h3>
+<div style="background:#f8f9fa; padding:10px;">
+{ITEM.NAME}: <strong>{ITEM.LASTVALUE}</strong> <!--Variables vinculadas al nombre y último valor de la métrica a la que está asociada el trigger-->
+</div>
+
+<br>
+
+<h3 style="margin-bottom:5px;">🔎 Información Técnica</h3>
+<ul>
+<li><strong>Estado actual:</strong> OK</li>
+<li><strong>Evento original:</strong> {EVENT.NAME}</li> <!--Varible sobre el tiempo que lleva el evento-->
+</ul>
+
+<hr>
+
+<p style="font-size:12px; color:#6c757d;">
+Este mensaje confirma que el problema ha sido resuelto automáticamente.<br>
+Notificación generada por Zabbix.
+</p>
+
+</div>
+</body>
+</html>
