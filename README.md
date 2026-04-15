@@ -85,6 +85,8 @@ Zabbix -.SNMP.-> Router
 - **Bash**
 - **SMTP (envío de alertas por correo)**
 - **VirtualBox**
+- **Crontab**
+- **HTML**
 
 ---
 
